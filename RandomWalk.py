@@ -36,5 +36,5 @@ for i in range(n_points):
     X[i, :] = p
 
 
-plt.scatter(X[:, 0], X[:, 1])
+plt.scatter(X[:, 0], X[:, 1], c=np.arange(n_points))
 plt.show()
