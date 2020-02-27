@@ -15,9 +15,9 @@ M = 5.9740e24 # Mass of the earth in kilograms
 G = 6.67408e-11 # Gravitational constant: meters^3/(kg*sec^2)
 
 # Setup the initial position and velocity vectors of the moon,
-# noting that the moon is about 384.4 miles away from the earth on
-# average in its orbit, and that it goes at 1000 meters/second
-# on average
+# noting that the moon is about 384.4 million meters away from
+# the earth on average in its orbit, and that it goes at
+# 1000 meters/second on average
 p = p_earth + np.array([384400000, 0, 0])
 v = np.array([0, 0, 1000]) # 1000 meters/second
 
