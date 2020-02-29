@@ -58,12 +58,9 @@ while total_time < SECONDS_IN_DAY*60: # Go for 60 days
     direction = p_earth - p
     # Find the magnitude of this vector
     r = np.sqrt(np.sum(direction**2))
-    # Divide the vector by its magnitude so it is a unit
-    # vector
-    direction = direction/r
     # Apply the vector law of gravitation to get the
     # acceleration
-    a = direction*(G*M/r**2)
+    a = direction*(G*M/r**3)
     # Update the velocity and position based on the acceleration
     v = v + dt*a
     p = p + dt*v

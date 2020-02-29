@@ -13,7 +13,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 n_points = 2000
-# Setup an array to 
+# Setup an array to hold all of the points that 
+# we generate.  Each point is along a row.  
+# The first column holds the x coordinates
+# The second column holds the y coordinates
 X = np.zeros((n_points, 2))
 # Start at the point (0, 0)
 p = np.array([0, 0])
@@ -36,5 +39,5 @@ for i in range(n_points):
     X[i, :] = p
 
 
-plt.scatter(X[:, 0], X[:, 1], c=np.arange(n_points))
+plt.scatter(X[:, 0], X[:, 1], c=np.arange(n_points), cmap='gray')
 plt.show()
